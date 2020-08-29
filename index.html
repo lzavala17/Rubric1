@@ -13,17 +13,14 @@
   First name: <input type="text" name="firstName"><br>
   Last name: <input type="text" name="lastName"><br>
   Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="age"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
+  <input type="button" onclick="myFunction()" link href="index.html" value="Submit">
 </form>
 	
 <script>
 function myFunction() {
-  document.getElementById("form1").reset();	
+  document.getElementById("form1").submit(thankYou.html);	
 }
-	if ("form1" == 0)
-  {
-  alert("Name field should not be empty");
-  }
+	
 	
 </script>
 </body>
