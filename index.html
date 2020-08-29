@@ -15,13 +15,20 @@
   Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="age"><br><br>
   <input type="button" onclick="myFunction()" value="Submit">
 </form>
+	<br><br>
+	<p>If you add 15 to your age are you older than 50?</p>
+<button type="button" onclick="document.write(x + 15)">Try it</button>	
 	
 <script>
 function myFunction() {
   document.getElementById("form1").submit();	
 }
-	
-	
+var x = "age";
+var y = 15;
+var z = x + y;
+	if (z < 50) {
+		alert ("Yeehaa, You're a youngen.")
+	}
 </script>
 </body>
 </html>
