@@ -4,7 +4,7 @@ var z = x + y;
 
 console.log(z == 78)
 	
-	if (z == 78 | z < 100) {
+	if (z < 100) {
 		alert ("Yay! It's less than 100 degrees out!")
 	}
 	
