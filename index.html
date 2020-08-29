@@ -5,9 +5,6 @@
 <title>Rubric1</title>
 </head>
 <body>
-	<script>
-	alert("Welcome! Please fill in your information requested and have a good day!")
-	</script>
 	
 <form id="form1" action="thankYou.html">
   First name: <input type="text" name="firstName"><br>
@@ -16,31 +13,43 @@
   <input type="button" onclick="myFunction()" value="Submit">
 </form>
 	<br><br>
+	
 	<p>If you add 15 to your age are you older than 50?</p>
+	
 <button type="button" onclick="myFunction2()">Yes</button>
+	
 	<button type="button" onclick="myFunction3()">No</button>
 	
 <script>
 function myFunction() {
   document.getElementById("form1").submit();	
 }
+	
 	function myFunction2(){
 document.open();
   document.write("Age only gets better in time");
 	document.close();
 }
+	
 		function myFunction3(){
 document.open();
   document.write("Yeehaa, You are a youngen");
 	document.close();
 }
-	
-var x = "age";
+
+var x = 63;
 var y = 15;
 var z = x + y;
-	if (z < 50) {
-		alert ("Yeehaa, You're a youngen.")
+	
+	if (z < 100) {
+		alert ("Yay! It's less than 100 degrees out!")
 	}
+	
+	var date = new Date()
+	alert("Today is" + date)  
+	
+	alert("Welcome! Please fill in your information requested and have a good day!")
+	
 </script>
 </body>
 </html>
