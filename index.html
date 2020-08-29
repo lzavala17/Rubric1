@@ -5,23 +5,28 @@
 <title>Rubric1</title>
 </head>
 <body>
+	<script>
+	alert("Welcome! Please fill in your information requested and have a good day!")
+	</script>
+	
 <form id="form1" action="/action_page.php">
   First name: <input type="text" name="firstName"><br>
   Last name: <input type="text" name="lastName"><br>
   Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="age"><br><br>
   <input type="button" onclick="myFunction()" value="Submit">
-</form><br><br>
-	<script>
-	alert("Welcome! Please fill in your information requested and have a good day!")
-	</script>
+</form>
+	
 <script>
 function myFunction() {
-  document.getElementById("form1").reset();
-	}
-	var x = document.getElementById("age").value();
-		if ( x > 50) {
-		alert("yay!")
+  document.getElementById("form1").reset();	
 }
+	if ("firstName" == 0)
+  {
+  alert("Name field should not be empty");
+ 
+  return false;
+  }
+	
 </script>
 </body>
 </html>
